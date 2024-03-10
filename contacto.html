@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS's Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <div id="live-clock"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contacto-section">
+    <h4>Contacto</h4>
+    <form action="" class="formulario" id="formulario" name="formulario">
+        <div class="contenedor-inputs">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <div class="terminos">
+                <label for="terminos">Acepto los terminos y condiciones</label>
+                <input type="checkbox" name="terminos" id="terminos">
+            </div>
+
+            <ul class="error" id="error"></ul>
+        </div>
+        <input type="submit" class="btn" value="Enviar">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 CSS's Café. Todos los derechos reservados.</p>
+    <button onclick="function irArriba() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    irArriba()" class="btn" title="Ir arriba">Ir Arriba</button>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="script.js"></script>
+<script src="form.js"></script>
+</body>
+</html>

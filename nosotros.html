@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS's Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div id="live-clock"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="nosotros">
+    <h4>Nosotros</h4>
+
+    <div class="nosotros-item">
+        <img src="benja.PNG" alt="Foto 1" class="nosotros-img">
+        <div class="nosotros-content">
+            <h3>Benjamín Martínez Sangeado</h3>
+            <p class="nosotros-texto">
+                Como líder del equipo, Benjamín es una persona amable y trabajadora, mientras aprecia profundamente la programación. Dirige al equipo de desarrollo web con un enfoque preciso y colaborativo, asegurando que cada proyecto sea entregado con la más alta calidad. Su pasión por la programación y su compromiso con la excelencia inspiran al equipo a alcanzar nuevos niveles de innovación y detalle en la creación de experiencias digitales. Su liderazgo ejemplar y su dedicación lo convierten en un referente en el ámbito profesional.
+            </p>
+        </div>
+    </div>
+    <div class="nosotros-item">
+        <img src="oliver.jpg" alt="Foto 2" class="nosotros-img">
+        <div class="nosotros-content">
+            <h3>Oliver Yamil Hernández Segura</h3>
+            <p class="nosotros-texto">
+                Oliver tiene una pasión innegable por el diseño y se esfuerza por entregar resultados de alta calidad. Aunque a veces puede enfrentar desafíos con los plazos, su compromiso con la excelencia lo impulsa a superar obstáculos y entregar proyectos que superan las expectativas. Su creatividad y dedicación lo hacen destacar en el campo del diseño.
+            </p>
+        </div>
+    </div>
+    <div class="nosotros-item">
+        <img src="sebas.jpg" alt="Foto 3" class="nosotros-img">
+        <div class="nosotros-content">
+            <h3>Sebastian Guerrero Villa</h3>
+            <p class="nosotros-texto">
+                Lorem
+            </p>
+        </div>
+    </div>
+    <div class="nosotros-item">
+        <img src="inaki.jpg" alt="Foto 4" class="nosotros-img">
+        <div class="nosotros-content">
+            <h3>Iñaki Quezada Díaz</h3>
+            <p class="nosotros-texto">
+                Iñaki se destaca por su dedicación a la ingeniería en TI y su amor por el deporte, especialmente como portero del equipo de su universidad, a pesar de tener 22 años. Su vida académica y deportiva se complementa con una rica vida familiar y pasatiempos que incluyen fútbol, música country y tropical house. También participa en actividades sociales y programas académicos de excelencia. Iñaki combina ambiciones profesionales con deseos personales profundos, demostrando un joven visionario y apasionado por un futuro pleno y emocionante.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 CSS's Café. Todos los derechos reservados.</p>
+    <button onclick="function irArriba() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    irArriba()" class="btn" title="Ir arriba">Ir Arriba</button>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('fondo.png');
+}
+
+.cafe-intro{
+    margin: 20px auto; /* Centra el contenido y añade margen vertical */
+    width: 42%; /* Ancho máximo establecido */
+    border-radius: 10px; /* Opcional: bordes redondeados */ /* Fondo blanco para estos elementos, para asegurar legibilidad */
+}
+
+.info, .map{
+    margin: 20px auto; /* Centra el contenido y añade margen vertical */
+    width: 40%; /* Ancho máximo establecido */
+    border-radius: 10px;
+}
+
+
+/* Estilos para header */
+header {
+    margin: 20px auto; /* Centra el contenido y añade margen vertical */
+    width: 42%; /* Ancho máximo establecido */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #764C24; /* Color café */
+}
+
+/* Estilos para el reloj en vivo */
+header #live-clock {
+    color: white;
+    font-size: 20px;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: #9B7653; /* Color café claro */
+}
+
+/* Estilos para footer */
+footer {
+    background: #faebe1;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 10px;
+}
+
+
+footer .btn {
+    font-family: Montserrat, sans-serif;
+    border: none;
+    outline: none;
+    background-color: #9B7653;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer .btn:hover {
+    background-color: #555; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para el slider, ajustando para que use el 100% del ancho del contenedor */
+.slider div {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slider {
+    padding: 5px;
+}
+
+/* Estilos para el texto del nombre de la cafetería */
+.cafe-intro {
+    text-align: center;
+    background-color: #9B7653;
+    padding: 20px 0;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+h4 {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+
+/* Estilos para la sección de información y mapa */
+.info, .map {
+    font-weight: bold;
+    background-color: #faebe1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilos para la página Nosotros */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.nosotros-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #faebe1;
+    width: 42%;
+    border-radius: 10px;
+}
+
+.nosotros-item h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.nosotros h4 {
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    background: #faebe1;
+    text-align: center;
+}
+
+.nosotros-img {
+    margin-right: 20px;
+    padding: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 15%;
+}
+
+.nosotros-texto {
+    flex: 1;
+    max-width: 90%;
+}
+
+.nosotros-content {
+    overflow: hidden;
+}
+
+.nosotros-content h3, .nosotros-content p {
+    margin: 0;
+    padding: 2px;
+}
+
+.nosotros-content p {
+    font-size: 13px;
+    text-align: justify;
+    text-justify: auto;
+}
+
+
+/* Estilos para la página Contacto */
+.contacto-section {
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 10px;
+    background: #faebe1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contacto-section form {
+    width: 100%;
+    max-width: 700px;
+}
+
+.contacto-section form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario{
+    display: block;
+    width: 100%;
+}
+
+
+/* Estilos del checkbox */
+.contacto-section form input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+/* Estilos para inputs del formulario */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea{
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid #777777;
+}
+
+/* Tamaño fijo para el textarea */
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+
+/* Estilos del mensaje de error */
+.formulario .error{
+    display: none;
+    margin-top: 20px;
+    color: #bb3600;
+    margin-bottom: 5px;
+}
+
+/* Estilos del boton submit */
+.formulario .btn{
+    margin-top: 10px;
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+    background: #9B7653;
+    color: #ffffff;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    transition: background-color 0.5s ease
+}
+
+/* Efecto hover para el boton */
+.formulario .btn:hover{
+    background: #644c37;
+}
