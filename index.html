@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS's Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <div id="live-clock"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="cafe-intro">
+    <h1>CSS's Café</h1>
+    <div class="slider">
+        <div class="bxslider">
+            <div><img src="imagen1.webp" alt="Imagen 1"></div>
+            <div><img src="imagen2.webp" alt="Imagen 2"></div>
+            <div><img src="imagen3.jpg" alt="Imagen 3"></div>
+            <div><img src="imagen4.jpg" alt="Imagen 4"></div>
+        </div>
+    </div>
+</div>
+
+<div class="info">
+    <p>Dirección: Cto. Universidades I, Fracción 2, 76246 Zibatá, Qro.</p>
+    <p>Horarios: Lunes a Viernes de 8:00 a 20:00</p>
+</div>
+
+<div class="map">
+    <!-- Iframe del mapa -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.735504739236!2d-100.31558092400768!3d20.680336999653054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35c2e9107bb03%3A0x365420365d90d821!2sUniversidad%20An%C3%A1huac%20Quer%C3%A9taro!5e0!3m2!1ses!2smx!4v1710043170250!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer>
+    <p>&copy; 2024 CSS's Café. Todos los derechos reservados.</p>
+    <button onclick="function irArriba() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    irArriba()" class="btn" title="Ir arriba">Ir Arriba</button>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- bxSlider -->
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
